@@ -1,0 +1,29 @@
+{
+  "name": "public",
+  "main": "/js/controller.js",
+  "version": "0.0.0",
+  "authors": [
+    "Trish Bonnette <pbonnette@mobiquityinc.com>"
+  ],
+  "keywords": [
+    "angular",
+    "weather"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-modal": "~0.4.0",
+    "angular": "~1.3.11"
+  },
+  "resolutions": {
+    "angular": "~1.3.11"
+  }
+}

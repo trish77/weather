@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather Service</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/angular.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div ng-app="weatherApp" ng-controller="WeatherController as ctrl" class="container centered">
+            <div class="row">
+                 <div class="col-sm-6 centered">
+            <h1>Weather Checker</h1>        
+
+            <input type="text"
+                   ng-model="place"
+                   ng-model-onblur
+                   ng-change="getPlace()"
+                   placeholder="Where are you?">
+             <ul class="nav nav-pills nav-stacked">
+                <li ng-app="myAnimator" class="animate-repeat" ng-repeat="result in results">
+                    <a href="#" ng-click="getWeather(result, this)">{{result.formatted_address}}</a>
+                </li>
+            </ul>
+            </div>
+
+           
+            <div class="col-sm-6">
+                <div id="forecast" ng-app="myAnimator" class="animate-enter centered" ng-show="weather">
+                        <h3>Weather for {{weather.location}}</h3>
+                        <h3>{{weather.temperature}} &deg; F (Feels like {{weather.apparentTemperature}} &deg; F)</h3>
+                        <h3>{{weather.summary}}</h3>
+                </div> 
+            </div>
+                     
+    </div>
+
+</div>
+
+
+  
+       
+         <script src="/js/angular-animate.min.js"></script>
+    
+    
+        <script src="/js/app.js"></script>
+        <script src="/js/controller.js"></script>
+        <script src="/js/animateController.js"></script>
+      
+

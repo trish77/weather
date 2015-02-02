@@ -1,0 +1,231 @@
+
+.animate-repeat {
+  line-height:40px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}
+
+.animate-enter. { 
+    -webkit-animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative;
+} 
+
+.animate-enter.ng-move,
+.animate-enter.ng-enter,
+.animate-enter.ng-leave
+ { 
+    -webkit-animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative;
+} 
+.animate-enter.ng-leave.ng-leave-active,
+.animate-enter.ng-move,
+.animate-enter.ng-enter {
+    -webkit-animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative;    
+}
+.animate-enter.ng-leave,
+.animate-enter.ng-move.ng-move-active,
+.animate-enter.ng-enter.ng-enter-active {
+    -webkit-animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: enter 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative; 
+}
+@-webkit-keyframes enter {
+    from {
+        opacity: 0;
+        height: 0px;
+        top: -50px;
+        left: -5px;
+    }
+    10% {
+        left: 45px;
+    }
+    20% {
+        top: 40px;
+    }
+    30% {
+        left: -35px;
+    }
+    40% {
+        top: -30px;
+    }
+    50% {
+        left: 25px;
+    }
+    60% {
+        top: 20px;
+    }
+    70% {
+        left: -15px;
+    }
+    80% {
+        top: -10px;
+    }
+    90% {
+        left: 5px;
+    }
+    to {
+        opacity: 1;
+        height: 30px;
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes enter {
+    from {
+        opacity: 0;
+        height: 0px;
+        top: -50px;
+        left: -5px;
+    }
+    10% {
+        left: 45px;
+    }
+    20% {
+        top: 40px;
+    }
+    30% {
+        left: -35px;
+    }
+    40% {
+        top: -30px;
+    }
+    50% {
+        left: 25px;
+    }
+    60% {
+        top: 20px;
+    }
+    70% {
+        left: -15px;
+    }
+    80% {
+        top: -10px;
+    }
+    90% {
+        left: 5px;
+    }
+    to {
+        opacity: 1;
+        height: 30px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.animate-leave { 
+    -webkit-animation: leave 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: leave 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    display: block;
+    position: relative;
+} 
+@-webkit-keyframes leave {
+    to {
+        opacity: 0;
+        height: 0px;
+        top: -50px;
+        left: -5px;
+    }
+    90% {
+        left: 45px;
+    }
+    80% {
+        top: 40px;
+    }
+    70% {
+        left: -35px;
+    }
+    60% {
+        top: -30px;
+    }
+    50% {
+        left: 25px;
+    }
+    40% {
+        top: 20px;
+    }
+    30% {
+        left: -15px;
+    }
+    20% {
+        top: -10px;
+    }
+    10% {
+        left: 5px;
+    }
+    from {
+        opacity: 1;
+        height: 30px;
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes leave {
+    to {
+        opacity: 0;
+        height: 0px;
+        top: -50px;
+        left: -5px;
+    }
+    90% {
+        left: 45px;
+    }
+    80% {
+        top: 40px;
+    }
+    70% {
+        left: -35px;
+    }
+    60% {
+        top: -30px;
+    }
+    50% {
+        left: 25px;
+    }
+    40% {
+        top: 20px;
+    }
+    30% {
+        left: -15px;
+    }
+    20% {
+        top: -10px;
+    }
+    10% {
+        left: 5px;
+    }
+    from {
+        opacity: 1;
+        height: 30px;
+        left: 0px;
+        top: 0px;
+    }
+}
